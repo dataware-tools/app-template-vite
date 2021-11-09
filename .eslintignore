@@ -11,6 +11,7 @@
 # vite
 /.vite/
 /dist/
+/public
 
 # production
 /build
