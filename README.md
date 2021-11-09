@@ -34,9 +34,9 @@ npm run dev
 yarn dev
 ```
 
-Open http://localhost:3000/{homepage} with your browser to see the result.
+Open http://localhost:3000/{basePath} with your browser to see the result.
 
-(If you configured `homepage` property of `package.json` to `app-template-nextjs` , you should open http://localhost:3000/app-template-nextjs)
+(If you configured `basePath` property of `package.json` to `app-template-vite` , you should open http://localhost:3000/app-template-vite)
 
 You can start editing the page by modifying `pages/*.tsx`, `components/*.tsx`. The page auto-updates as you edit the file.
 
@@ -47,12 +47,6 @@ You can start editing the page by modifying `pages/*.tsx`, `components/*.tsx`. T
 ```bash
 $ export DOCKER_BUILDKIT=1
 $ docker build -t app:latest --secret id=npmrc,src=${HOME}/.npmrc .
-```
-
-On MacOS or Linux, you may have to run the following commands before building the image.
-
-```bash
-$ ssh-add
 ```
 
 ### How to run docker-container
@@ -77,9 +71,9 @@ $ docker-compose up
 
 ### Production
 
-- [Next.js](https://nextjs.org/learn/basics/create-nextjs-app)
+- [Vite](https://vitejs.dev/)
 
-  React Framework. No complex config needed, but extendable.
+  Build tool that aims to provide a faster and leaner development experience for modern web projects.
 
 - [Material-UI](https://next.material-ui.com/getting-started/usage/)
 
@@ -146,12 +140,3 @@ $ docker-compose up
 - [volta](https://volta.sh/)
 
   JavaScript tool manager like nvm, n
-
-## Note
-
-- This template is intend to use for Single Page Application. So if you want create SSR, or SSG application, you should change some config of this template
-
-## TODOs
-
-- Add container for development
-- Add .devcontainer.json example for supporting vscode remote container
