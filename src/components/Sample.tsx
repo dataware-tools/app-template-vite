@@ -3,7 +3,8 @@ import { metaStore } from "@dataware-tools/api-meta-store-client";
 import Button from "@mui/material/Button";
 import useSWR, { mutate } from "swr";
 
-const apiUrlBase = process.env.NEXT_PUBLIC_BACKEND_API_PREFIX || "/api/latest";
+const apiUrlBase =
+  process.env.DATAWARE_TOOLS_BACKEND_API_PREFIX || "/api/latest";
 
 export type SamplePresentationProps = {
   user: any;
