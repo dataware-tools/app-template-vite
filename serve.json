@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "index.html",
+      "destination": "app-template-vite/index.html"
+    }
+  ]
+}

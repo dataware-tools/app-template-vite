@@ -5,7 +5,7 @@ The things you have to do after creating a repository based on this template are
 - Change `name` in `package.json` to the name of your application
 - Change `repository` in `package.json` to the newly created repository
   - This property is used for link in footer in default.
-- Change `basePath` in `package.json` to your application name
+- Change `basePath` in `package.json` and `rewrites.destination` in `serve.json` to your application name
   - This property is used for root path of application in default.
 
 ## Getting started
