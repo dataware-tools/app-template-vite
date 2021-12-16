@@ -32,7 +32,7 @@
     "@dataware-tools/api-file-provider-client": "^1.6.2",
     "@dataware-tools/api-meta-store-client": "^0.5.1",
     "@dataware-tools/app-common": "^21.12.8",
-    "@emotion/react": "^11.4.1",
+    "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.3.0",
     "@mui/icons-material": "^5.2.4",
     "@mui/lab": "^5.0.0-alpha.60",
