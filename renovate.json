@@ -8,7 +8,9 @@
     ":automergeTesters",
     ":automergeTypes",
     ":automergePr",
-    "group:monorepos"
+    "group:monorepos",
+    "docker:disableMajor",
+    "helpers:disableTypesNodeMajor"
   ],
   "hostRules": [
     {
@@ -17,13 +19,6 @@
       "encrypted": {
         "token": "wcFMA/xDdHCJBTolAQ/+JfVhEsXl/QFaaNENPk3snQfHc7t9i/hqz9sZsTDKGtVx7M5ivv8lvc00vjqfy6qjkZjvnVCYUv4mwoNk9JXsdRKfI0fN8k0eVSr8/67llcIkydRBYe6UTcxLBDp24Y2KYSMiFVhAoMQCzn8O9rlic5SqGtbP0gwdvuYu6ACQxa1ctuX7WVwglfJ1Qqk/8LXg6nUq13rBg+pKbeIEiBXfTlvfJOsyurfIXNHjdLoezcrLbnOjgtkqIDrjIXBGahscJZ7Oinh/zideQUh96x6+zaJ+AA1rV3+55hI3lcCNE2TBlRVcXvra82AfGKORYO4D3H5HAkG++T1AXTXkRoSAhHxo4GrRl5acFKmV+tREPlVxFNXEaKVnUbES0nW3Gv6dxwMFfbGhytJAeTCIJ/ZCo6feLuwdxe1hpfnsY9xnKjMv4MjQPznott0USrEqpYZs8P3EG0rEd+2MmhW8lkZU8fMnw+F6pRZwdFyxf/Xo2thewwigQkKzoUb50tQeQJHVlj99hYgoObOggAnlpnM2lLFngIgEGINhLMixCff2raHGkusqNu+GsCZ3dKiipy+Zfgt8komEOyyJefWRgEYXkFdVFSLH47roZRMYb+5Pruuk4K0dE0BYK7PcILnShulrEnVY34gl8XLTex3nzyxfs8nPLGDkg2KpX2R6uxoo2tHSfQFN2eCRfpGVgvSrqAyZUxjxz4H1nZydjAKI8Xrx6QqcPe1pykDIqj0a3gAHzJv5AzFVyOzit5F3+9KuVJNHgaFCW/SprRJ2q+q5xkFminJfsYTMW5YQeKXHxIU4xEdAY5x28oAK3KerSD7sQWnG+j2PODkiksPdpMfXcGSC"
       }
-    }
-  ],
-  "packageRules": [
-    {
-      "matchPackageNames": ["@types/node", "node"],
-      "matchUpdateTypes": ["major"],
-      "enabled": false
     }
   ],
   "prHourlyLimit": 0
