@@ -19,5 +19,12 @@
       }
     }
   ],
+  "packageRules": [
+    {
+      "matchPackageNames": ["@types/node", "node"],
+      "matchUpdateTypes": ["major"],
+      "enabled": false
+    }
+  ],
   "prHourlyLimit": 0
 }
