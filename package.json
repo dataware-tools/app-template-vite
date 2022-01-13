@@ -5,7 +5,7 @@
   },
   "volta": {
     "node": "16.13.2",
-    "npm": "8.1.4"
+    "npm": "8.3.1"
   },
   "name": "app-template-vite",
   "version": "0.0.0",
