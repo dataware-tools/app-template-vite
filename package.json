@@ -48,7 +48,7 @@
     "swr": "1.1.2"
   },
   "devDependencies": {
-    "@babel/core": "7.16.10",
+    "@babel/core": "7.16.12",
     "@originjs/vite-plugin-commonjs": "1.0.2",
     "@storybook/addon-actions": "6.4.14",
     "@storybook/addon-essentials": "6.4.14",
