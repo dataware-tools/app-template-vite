@@ -3,7 +3,7 @@
 FROM node:16.13.2 AS deps
 WORKDIR /app
 RUN wget -O /bin/jq https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64 && chmod +x /bin/jq
-COPY . .
+COPY package.json package-lock.json ./
 RUN npm -g config set user root && npm -g config set unsafe-perm true
 RUN --mount=type=secret,id=npmrc,target=/root/.npmrc npm install
 
@@ -15,6 +15,7 @@ RUN apk update && apk add \
   nodejs \
   npm
 WORKDIR /app
+COPY . .
 COPY --from=deps /app .
 # Update loki config for dind
 # See: https://github.com/oblador/loki/issues/9#issuecomment-803197847
