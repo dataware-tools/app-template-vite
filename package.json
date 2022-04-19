@@ -28,7 +28,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@auth0/auth0-react": "1.8.0",
+    "@auth0/auth0-react": "1.9.0",
     "@dataware-tools/api-file-provider-client": "1.7.1",
     "@dataware-tools/api-meta-store-client": "0.5.3",
     "@dataware-tools/app-common": "22.1.5",
