@@ -2,8 +2,6 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "github>dataware-tools/renovate-config",
-    ":automergeMinor",
-    ":skipStatusChecks"
   ],
   "reviewers": ["WatanabeToshimitsu"]
 }
