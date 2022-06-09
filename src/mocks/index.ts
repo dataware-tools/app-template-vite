@@ -9,7 +9,8 @@ const serviceWorkerOptions = {
 
 if (typeof window !== "undefined") {
   console.log("Mock Service Worker start!");
-  const { worker } = await import("../mocks/browser");
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  const { worker } = require("../mocks/browser");
   worker.start(serviceWorkerOptions);
   worker.printHandlers();
 }
