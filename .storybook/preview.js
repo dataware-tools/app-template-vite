@@ -6,15 +6,10 @@ import { theme } from "@dataware-tools/app-common";
 import { SWRConfig } from "swr";
 import { SwrOptions } from "../src/utils";
 import { RecoilRoot } from "recoil";
+import baseConfig from "@dataware-tools/dev-tools-for-react/configs/.storybook/preview"
 
 export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
-  controls: {
-    matchers: {
-      color: /(background|color)$/i,
-      date: /Date$/,
-    },
-  },
+  ...baseConfig.parameters
 };
 
 export const decorators = [
